@@ -179,6 +179,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Ball_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 205
+        width: 64
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15ab5dd90fc64d6aa71b1d259cfc2a1
+      internalID: -1391605724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline:
     - - {x: 33, y: 128}
       - {x: -33, y: 128}
@@ -225,6 +247,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Ball_0: -1391605724
       Circle: -2413806693520163455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
