@@ -10,11 +10,14 @@ public class ChestInteraction : MonoBehaviour
     private bool isInRange = false;
     private bool isOpened = false;
     private Animator animator;
+    private AudioSource sound;
+
 
     void Start()
     {
         player = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
+        sound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -35,6 +38,9 @@ public class ChestInteraction : MonoBehaviour
     {
         isOpened = true;
         Debug.Log("Chest opened!");
+
+        CanvasControl.Instance.CollectChest();
+        AudioSource.PlayClipAtPoint(sound.clip, transform.position);
 
         // Add your chest opening logic here (e.g., reveal contents, give rewards)
         // You can also add sound effects or particle systems here

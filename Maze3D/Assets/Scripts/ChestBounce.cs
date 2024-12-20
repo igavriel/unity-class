@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class ChestJump : MonoBehaviour
+public class ChestBounce : MonoBehaviour
 {
     public float bounceHeight = 0.1f;
     public float bounceSpeed = 2f;
