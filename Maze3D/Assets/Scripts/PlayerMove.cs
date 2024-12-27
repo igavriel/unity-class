@@ -3,9 +3,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     public float moveSpeed = 5f;
-    public float jumpForce = 5f;
-    public float rotationSpeed = 100;
-    public bool isGrounded = false;
+    public float rotationSpeed = 90;
 
     private Rigidbody rb;
     private Animator animator;
@@ -31,8 +29,13 @@ public class PlayerMove : MonoBehaviour
         // Rotate the player
         transform.Rotate(Vector3.up * moveHorizontal * rotationSpeed * Time.deltaTime);
 
-        // Move the player forward
-        Vector3 movement = transform.forward * moveVertical * moveSpeed;
+        // Calculate movement in the horizontal plane only
+        Vector3 movement = transform.forward;
+        movement.y = 0; // Remove vertical component
+        movement.Normalize(); // Normalize to maintain consistent speed
+        movement *= moveVertical * moveSpeed;
+
+        // Apply movement
         rb.MovePosition(rb.position + movement * Time.deltaTime);
     }
 }
