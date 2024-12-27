@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectCollector : MonoBehaviour
+public abstract class ObjectCollector : MonoBehaviour
 {
     public float destroyDelay = 0.5f; // Time delay before destroying the chest
 
@@ -19,6 +19,8 @@ public class ObjectCollector : MonoBehaviour
         }
     }
 
+    protected abstract void CollectObject();
+
     private void Collect()
     {
         Debug.Log("Object collected!");
@@ -26,7 +28,8 @@ public class ObjectCollector : MonoBehaviour
 
         // You can add effects here, like sound or particles
         AudioSource.PlayClipAtPoint(sound.clip, transform.position);
-//        CanvasControl.Instance.CollectCoin();
+
+        CollectObject();
         // SpawnCollectionParticles();
 
         // Destroy the coin
