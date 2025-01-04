@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1364063774300817388, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -70,6 +70,12 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 7486963404607329818}
+    - targetCorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6305076259286641307}
+    - targetCorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 2419721634316205378}
     - targetCorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
       insertIndex: -1
@@ -86,6 +92,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1848147560508530006, guid: 3da8a04d633151f4f9041cfe43eff63c, type: 3}
   m_PrefabInstance: {fileID: 1972650137495983513}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &7486963404607329818
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199762240944949455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1336891
+  m_Height: 0.60655504
+  m_Direction: 1
+  m_Center: {x: 0.27134126, y: 0.024872929, z: 0}
+--- !u!136 &6305076259286641307
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199762240944949455}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.10881615
+  m_Height: 0.64273363
+  m_Direction: 0
+  m_Center: {x: -0.10853651, y: -0.29169196, z: 0}
 --- !u!65 &2419721634316205378
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -103,7 +155,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.8404751, y: 0.6969025, z: 0.27197933}
   m_Center: {x: 0, y: -0.047857523, z: -0.004000187}
@@ -164,7 +216,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.22333202
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0

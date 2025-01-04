@@ -23,6 +23,12 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // do not move on pause
+        if (ScoreManager.PauseGame)
+        {
+            return;
+        }
+
         // Get input for horizontal and vertical movement
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");

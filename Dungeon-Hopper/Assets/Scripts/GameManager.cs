@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if (!isGameOver)
+        // update time only if not game over and not paused
+        if (!isGameOver && !ScoreManager.PauseGame)
         {
             timeRemaining -= Time.deltaTime;
 
