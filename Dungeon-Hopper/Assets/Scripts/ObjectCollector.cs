@@ -25,12 +25,16 @@ public class ObjectCollector : MonoBehaviour
     {
         Debug.Log("Object collected!");
 
-        if(sound)
+        if (sound)
         {   // You can add effects here, like sound or particles
             AudioSource.PlayClipAtPoint(sound.clip, transform.position);
         }
 
         inventory.CollectItem(objectValue);
+
+        GameManager gameManager = FindObjectOfType<GameManager>();
+        gameManager.CollectItem();
+
         // SpawnCollectionParticles();
 
         // Destroy the object

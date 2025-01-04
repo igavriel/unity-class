@@ -5,6 +5,7 @@ public class CanvasControl : MonoBehaviour
 {
     public GameObject welcomeScreen;
     public TMP_Text scoreText;
+    public TMP_Text timerText;
 
     // Update is called once per frame
     void Update()
@@ -13,6 +14,7 @@ public class CanvasControl : MonoBehaviour
         {
             welcomeScreen.SetActive(false);
             scoreText.enabled = true;
+            timerText.enabled = true;
         }
     }
 

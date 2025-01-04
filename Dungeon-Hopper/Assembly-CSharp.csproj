@@ -72,6 +72,7 @@
     <Compile Include="Assets/Scripts/PlayerInventory.cs" />
     <Compile Include="Assets/GameAssets/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
     <Compile Include="Assets/Scripts/PlayerMove.cs" />
+    <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
