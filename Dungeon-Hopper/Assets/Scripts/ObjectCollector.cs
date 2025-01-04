@@ -1,8 +1,9 @@
 using UnityEngine;
 
-public abstract class ObjectCollector : MonoBehaviour
+public class ObjectCollector : MonoBehaviour
 {
-    public float destroyDelay = 0.5f; // Time delay before destroying the chest
+    public int objectValue = 1;
+    public float destroyDelay = 0.1f; // Time delay before destroying the chest
 
     private AudioSource sound;
 
@@ -13,26 +14,26 @@ public abstract class ObjectCollector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        PlayerInventory playerInventory = other.GetComponent<PlayerInventory>();
+        if (playerInventory != null)
         {
-            Collect();
+            Collect(playerInventory);
         }
     }
 
-    protected abstract void CollectObject();
-
-    private void Collect()
+    private void Collect(PlayerInventory inventory)
     {
         Debug.Log("Object collected!");
 
+        if(sound)
+        {   // You can add effects here, like sound or particles
+            AudioSource.PlayClipAtPoint(sound.clip, transform.position);
+        }
 
-        // You can add effects here, like sound or particles
-        AudioSource.PlayClipAtPoint(sound.clip, transform.position);
-
-        CollectObject();
+        inventory.CollectItem(objectValue);
         // SpawnCollectionParticles();
 
-        // Destroy the coin
+        // Destroy the object
         Destroy(gameObject, destroyDelay);
     }
 }

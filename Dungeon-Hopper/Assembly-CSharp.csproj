@@ -67,10 +67,9 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/ObjectCollector.cs" />
     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
-    <Compile Include="Assets/Scripts/ObjectCollectorPepper.cs" />
-    <Compile Include="Assets/Scripts/ObjectBounce.cs" />
+    <Compile Include="Assets/Scripts/ObjectSpawner.cs" />
     <Compile Include="Assets/Scripts/CanvasControl.cs" />
-    <Compile Include="Assets/Scripts/ObjectCollectorCarrot.cs" />
+    <Compile Include="Assets/Scripts/PlayerInventory.cs" />
     <Compile Include="Assets/GameAssets/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
     <Compile Include="Assets/Scripts/PlayerMove.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />

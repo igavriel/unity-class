@@ -3,52 +3,21 @@ using TMPro;
 
 public class CanvasControl : MonoBehaviour
 {
-    public static CanvasControl Instance;
-
-    public GameObject title;
-    public GameObject image;
-    public TMP_Text carrotScore;
-    public TMP_Text pepperScore;
-
-    private int carrotCount = 0;
-    private int pepperCount = 0;
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    public GameObject welcomeScreen;
+    public TMP_Text scoreText;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            title.SetActive(false);
-            image.SetActive(false);
-            carrotScore.enabled = true;
-            pepperScore.enabled = true;
+            welcomeScreen.SetActive(false);
+            scoreText.enabled = true;
         }
     }
 
-    public void CollectCarrot()
+    public void UpdateScoreText(PlayerInventory inventory)
     {
-        ++carrotCount;
-        Debug.Log($"Carrot collected: {carrotCount}");
-        carrotScore.SetText($"Carrot(s): {carrotCount}");
-    }
-
-    public void CollectPepper()
-    {
-        ++pepperCount;
-        Debug.Log($"Pepper collected: {pepperCount}");
-        pepperScore.SetText($"Pepper(s): {pepperCount}");
+        scoreText.SetText($"Score: {inventory.Score}");
     }
 }
