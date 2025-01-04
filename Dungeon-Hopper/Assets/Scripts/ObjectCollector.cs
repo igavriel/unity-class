@@ -32,7 +32,7 @@ public class ObjectCollector : MonoBehaviour
 
         inventory.CollectItem(objectValue);
 
-        GameManager gameManager = FindObjectOfType<GameManager>();
+        GameManager gameManager = FindFirstObjectByType<GameManager>();
         gameManager.CollectItem();
 
         // SpawnCollectionParticles();

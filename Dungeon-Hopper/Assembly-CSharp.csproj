@@ -65,13 +65,18 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Scripts/CanvasGameControl.cs" />
     <Compile Include="Assets/Scripts/ObjectCollector.cs" />
+    <Compile Include="Assets/Scripts/ScoreManager.cs" />
     <Compile Include="Assets/Fonts/Script/scriptTexttest.cs" />
+    <Compile Include="Assets/Scripts/PlaySoundAtRandomIntervals.cs" />
     <Compile Include="Assets/Scripts/ObjectSpawner.cs" />
-    <Compile Include="Assets/Scripts/CanvasControl.cs" />
     <Compile Include="Assets/Scripts/PlayerInventory.cs" />
     <Compile Include="Assets/GameAssets/Rabbits/Demo/Scripts/AnimatorParamatersChange.cs" />
+    <Compile Include="Assets/Scripts/CanvasGameOver.cs" />
     <Compile Include="Assets/Scripts/PlayerMove.cs" />
+    <Compile Include="Assets/Scripts/CanvasStartNewGame.cs" />
+    <Compile Include="Assets/Scripts/CanvasHelp.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/CameraFollow.cs" />
   </ItemGroup>

@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class GameManager : MonoBehaviour
 {
+    public TMP_Text scoreText;
     public TMP_Text timerText;
-    private float timeRemaining = 60f; // Starting time in seconds
+    public float timeRemaining = 60f; // Starting time in seconds
     private bool isGameOver = false;
 
     void Update()
@@ -12,9 +14,12 @@ public class GameManager : MonoBehaviour
         if (!isGameOver)
         {
             timeRemaining -= Time.deltaTime;
-            UpdateCounterDisplay();
 
-            if (timeRemaining <= 0)
+            if (timeRemaining >= 0)
+            {
+                UpdateCounterDisplay();
+            }
+            else
             {
                 GameOver();
             }
@@ -27,6 +32,11 @@ public class GameManager : MonoBehaviour
         timerText.SetText($"Time: {seconds} Sec.");
     }
 
+    public void UpdateScoreText(PlayerInventory inventory)
+    {
+        scoreText.SetText($"Score: {inventory.score}");
+    }
+
     public void CollectItem()
     {
         timeRemaining += 3f; // Increase time by 3 seconds
@@ -35,6 +45,6 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         isGameOver = true;
-        //SceneManager.LoadScene("GameOverScene"); // Load your game over scene
+        SceneManager.LoadScene("GameOverScene"); // Load your game over scene
     }
 }
