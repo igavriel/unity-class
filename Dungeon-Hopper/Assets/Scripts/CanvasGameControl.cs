@@ -19,7 +19,7 @@ public class CanvasGameControl : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H))
         {
-            SceneManager.LoadScene("HelpScene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("4.HelpScene", LoadSceneMode.Additive);
         }
         if (Input.GetKeyDown(KeyCode.M))
         {

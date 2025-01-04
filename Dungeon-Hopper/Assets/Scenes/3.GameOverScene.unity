@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 79005482}
   - component: {fileID: 79005481}
   m_Layer: 5
-  m_Name: Text (TMP) High Score
+  m_Name: Text High Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,8 +153,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.484}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 112.992874, y: 159.8425}
-  m_SizeDelta: {x: 1011.8698, y: 171.8532}
+  m_AnchoredPosition: {x: 112.853714, y: 176.3261}
+  m_SizeDelta: {x: 1011.8698, y: 138.8848}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &79005481
 MonoBehaviour:
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 120.171295, y: 0, z: 170.05101, w: 0}
+  m_margin: {x: 120.171295, y: 0, z: 170.05101, w: -1.7804679}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -256,7 +256,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79005479}
   m_CullTransparentMesh: 1
---- !u!1 &491039952
+--- !u!1 &186982171
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,23 +264,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 491039953}
-  - component: {fileID: 491039955}
-  - component: {fileID: 491039954}
+  - component: {fileID: 186982172}
+  - component: {fileID: 186982174}
+  - component: {fileID: 186982173}
   m_Layer: 5
-  m_Name: Text (TMP) Start
+  m_Name: Text Start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &491039953
+--- !u!224 &186982172
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491039952}
+  m_GameObject: {fileID: 186982171}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -290,16 +290,16 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -0.000017495273, y: 35.99002}
+  m_AnchoredPosition: {x: 0, y: 35.989998}
   m_SizeDelta: {x: 745.3798, y: 71.97}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &491039954
+--- !u!114 &186982173
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491039952}
+  m_GameObject: {fileID: 186982171}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
@@ -323,8 +323,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279508384
-  m_fontColor: {r: 0.627451, g: 0.11372549, b: 0.078431375, a: 1}
+    rgba: 4292579992
+  m_fontColor: {r: 0.5979316, g: 0.5709772, b: 0.8584906, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -347,7 +347,7 @@ MonoBehaviour:
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -385,13 +385,13 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &491039955
+--- !u!222 &186982174
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491039952}
+  m_GameObject: {fileID: 186982171}
   m_CullTransparentMesh: 1
 --- !u!1 &909604614
 GameObject:
@@ -405,7 +405,7 @@ GameObject:
   - component: {fileID: 909604617}
   - component: {fileID: 909604616}
   m_Layer: 5
-  m_Name: Text (TMP) Score
+  m_Name: Text Score
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -427,8 +427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.484}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 108, y: 341}
-  m_SizeDelta: {x: 1039.6744, y: 167.6914}
+  m_AnchoredPosition: {x: 110.48628, y: 350.11823}
+  m_SizeDelta: {x: 1044.8007, y: 149.4976}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909604616
 MonoBehaviour:
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 120.171295, y: 0, z: 170.05101, w: 0}
+  m_margin: {x: 120.171295, y: 0, z: 170.05101, w: 4.857445}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -542,7 +542,7 @@ GameObject:
   - component: {fileID: 1078265091}
   - component: {fileID: 1078265090}
   m_Layer: 5
-  m_Name: Text (TMP) Header
+  m_Name: Text Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -564,8 +564,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.484}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 124, y: 505}
-  m_SizeDelta: {x: 1039.6744, y: 167.6914}
+  m_AnchoredPosition: {x: 121.35332, y: 515.7084}
+  m_SizeDelta: {x: 1034.5621, y: 146.2307}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1078265090
 MonoBehaviour:
@@ -653,7 +653,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 120.171295, y: 0, z: 235.40503, w: -10.656715}
+  m_margin: {x: 120.171295, y: 0, z: 235.40503, w: 4.121483}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1054,7 +1054,7 @@ RectTransform:
   - {fileID: 1078265089}
   - {fileID: 909604615}
   - {fileID: 79005480}
-  - {fileID: 491039953}
+  - {fileID: 186982172}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

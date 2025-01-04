@@ -7,7 +7,7 @@ public class CanvasHelp : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.UnloadSceneAsync("HelpScene");
+            SceneManager.UnloadSceneAsync("4.HelpScene");
         }
     }
 }

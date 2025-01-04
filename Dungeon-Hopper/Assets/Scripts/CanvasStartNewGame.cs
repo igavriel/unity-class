@@ -7,11 +7,11 @@ public class CanvasStartNewGame : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("2.GameScene");
         }
         if (Input.GetKeyDown(KeyCode.H))
         {
-            SceneManager.LoadScene("HelpScene", LoadSceneMode.Additive);
+            SceneManager.LoadScene("4.HelpScene", LoadSceneMode.Additive);
         }
     }
 }
