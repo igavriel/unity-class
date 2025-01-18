@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{04730D21-0937-F67F-7C70-517496E0A4C2}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{1B9A6516-E157-CE40-A5AD-48CF6EF7BD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.terrain.painter.editor", "sc.terrain.painter.editor.csproj", "{90272333-5426-5397-0A67-795834DE37B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sc.terrain.painter.runtime", "sc.terrain.painter.runtime.csproj", "{AE80BEF7-E6E2-3066-47E9-0248FD15CC40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +13,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{04730D21-0937-F67F-7C70-517496E0A4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04730D21-0937-F67F-7C70-517496E0A4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04730D21-0937-F67F-7C70-517496E0A4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04730D21-0937-F67F-7C70-517496E0A4C2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B9A6516-E157-CE40-A5AD-48CF6EF7BD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B9A6516-E157-CE40-A5AD-48CF6EF7BD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B9A6516-E157-CE40-A5AD-48CF6EF7BD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B9A6516-E157-CE40-A5AD-48CF6EF7BD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90272333-5426-5397-0A67-795834DE37B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90272333-5426-5397-0A67-795834DE37B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90272333-5426-5397-0A67-795834DE37B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90272333-5426-5397-0A67-795834DE37B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE80BEF7-E6E2-3066-47E9-0248FD15CC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE80BEF7-E6E2-3066-47E9-0248FD15CC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE80BEF7-E6E2-3066-47E9-0248FD15CC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE80BEF7-E6E2-3066-47E9-0248FD15CC40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
