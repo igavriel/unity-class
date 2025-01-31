@@ -60,10 +60,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Users/ilan.gavriel/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.5/Analyzers/Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/unityplastic.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
@@ -587,8 +583,8 @@
       <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll</HintPath>
+    <Reference Include="log4net">
+      <HintPath>Library/PackageCache/com.unity.package-validation-suite/Lib/Editor/log4net.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
@@ -605,6 +601,14 @@
     </Reference>
     <Reference Include="Mono.Cecil">
       <HintPath>Library/PackageCache/com.unity.nuget.mono-cecil/Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.APIComparison.Framework">
+      <HintPath>Library/PackageCache/com.unity.package-validation-suite/Lib/Editor/Unity.APIComparison.Framework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library/PackageCache/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">

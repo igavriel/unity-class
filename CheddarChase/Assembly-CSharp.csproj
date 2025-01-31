@@ -60,24 +60,24 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="/Users/ilan.gavriel/.vscode/extensions/visualstudiotoolsforunity.vstuc-1.0.5/Analyzers/Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/unityplastic.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/log4netPlastic.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/Unity.Plastic.Antlr3.Runtime.dll" />
-    <Analyzer Include="/Users/ilan.gavriel/git/shenkar/unity-class/CheddarChase/Library/PackageCache/com.unity.collab-proxy/Lib/Editor/Unity.Plastic.Newtonsoft.Json.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
     <Analyzer Include="/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/EasyStart Third Person Controller/Scripts/Commenteds/CommentedCameraController.cs" />
-    <Compile Include="Assets/EasyStart Third Person Controller/Scripts/ThirdPersonController.cs" />
-    <Compile Include="Assets/EasyStart Third Person Controller/Scripts/Commenteds/CommentedThirdPersonController.cs" />
-    <Compile Include="Assets/EasyStart Third Person Controller/Scripts/CameraController.cs" />
+    <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualTouchZone.cs" />
+    <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualJoystick.cs" />
+    <Compile Include="Assets/StarterAssets/Mobile/Scripts/Utilities/MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets/StarterAssets/ThirdPersonController/Scripts/ThirdPersonController.cs" />
+    <Compile Include="Assets/StarterAssets/Mobile/Scripts/VirtualInputs/UIVirtualButton.cs" />
+    <Compile Include="Assets/StarterAssets/Mobile/Scripts/CanvasInputs/UICanvasControllerInput.cs" />
+    <Compile Include="Assets/StarterAssets/ThirdPersonController/Scripts/BasicRigidBodyPush.cs" />
+    <Compile Include="Assets/StarterAssets/InputSystem/StarterAssetsInputs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Models/Food/Food_ReadMe.txt" />
-    <None Include="Assets/EasyStart Third Person Controller/Prefabs/Source/Models/credits.txt" />
     <None Include="Assets/ProceduralTerrainPainter/Shaders/Filters.hlsl" />
+    <None Include="Assets/StarterAssets/license.txt" />
     <None Include="Assets/ProceduralTerrainPainter/_Demo/Textures/_LICENSE.txt" />
     <None Include="Assets/ProceduralTerrainPainter/Shaders/Noise.hlsl" />
     <None Include="Assets/ProceduralTerrainPainter/Shaders/Modifier.shader" />
@@ -1055,6 +1055,10 @@
       <HintPath>/Applications/Unity/Hub/Editor/6000.0.28f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.InputSystem.ForUI">
       <HintPath>Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll</HintPath>
       <Private>False</Private>
@@ -1143,6 +1147,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.PackageValidationSuite.Editor.Extension">
+      <HintPath>Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.Extension.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Universal.Config.Runtime">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll</HintPath>
       <Private>False</Private>
@@ -1199,6 +1207,10 @@
       <HintPath>Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor">
       <HintPath>Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1213,6 +1225,10 @@
     </Reference>
     <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
       <HintPath>Library/ScriptAssemblies/Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.PackageValidationSuite.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.PackageValidationSuite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
