@@ -594,6 +594,8 @@ GameObject:
   - component: {fileID: 7382236136581335078}
   - component: {fileID: 7382236136581335079}
   - component: {fileID: 7382236136581335080}
+  - component: {fileID: 7382236136581335082}
+  - component: {fileID: 7382236136581335081}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -632,7 +634,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 1145759591774667133, guid: 5db9fec2c4990485eae511f051957d6e, type: 3}
   plane: {fileID: 110448418}
   numberOfStartObjects: 10
-  objectValue: 1
+  objectValue: 2
 --- !u!114 &7382236136581335078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -664,7 +666,7 @@ MonoBehaviour:
   objectPrefab: {fileID: 1145759591774667133, guid: fb79721013d1e4453a97aff46c14fecd, type: 3}
   plane: {fileID: 110448418}
   numberOfStartObjects: 10
-  objectValue: 10
+  objectValue: 5
 --- !u!114 &7382236136581335080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,7 +682,39 @@ MonoBehaviour:
   objectPrefab: {fileID: 1145759591774667133, guid: 7925de146580341ed936c2b742d064bf, type: 3}
   plane: {fileID: 110448418}
   numberOfStartObjects: 10
-  objectValue: 5
+  objectValue: 3
+--- !u!114 &7382236136581335081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382236136581335075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14980f29ae9724ba195f384e7394c62d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 1145759591774667133, guid: ecfdfec6c15f8424ebe5cf4a65a8e64d, type: 3}
+  plane: {fileID: 110448418}
+  numberOfStartObjects: 10
+  objectValue: 10
+--- !u!114 &7382236136581335082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7382236136581335075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14980f29ae9724ba195f384e7394c62d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: 1145759591774667133, guid: 62500af0356044977996c5b8e947fc71, type: 3}
+  plane: {fileID: 110448418}
+  numberOfStartObjects: 10
+  objectValue: 1
 --- !u!1001 &8538654879690255408
 PrefabInstance:
   m_ObjectHideFlags: 0
