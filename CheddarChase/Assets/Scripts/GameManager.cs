@@ -47,6 +47,6 @@ public class GameManager : MonoBehaviour
     void GameOver()
     {
         isGameOver = true;
-        SceneManager.LoadScene("3.GameOverScene"); // Load your game over scene
+//        SceneManager.LoadScene("3.GameOverScene"); // Load your game over scene
     }
 }

@@ -3,7 +3,8 @@
 public class ObjectSpawner : MonoBehaviour
 {
     public GameObject objectPrefab;
-    public GameObject plane;
+    public GameObject terrain;
+    private Vector3 invisibleWall = new Vector3(125.0f, 0, 125.0f);
     public int numberOfStartObjects = 10;
     public int objectValue = 1;
 
@@ -12,12 +13,11 @@ public class ObjectSpawner : MonoBehaviour
     void Start()
     {
         // Get the bounds of the plane
-        MeshCollider planeCollider = plane.GetComponent<MeshCollider>();
-        bounds = planeCollider.bounds;
+        TerrainCollider terrainCollider = terrain.GetComponent<TerrainCollider>();
+        bounds = terrainCollider.bounds;
 
-        Debug.Log($"Plane Bounds {bounds}");
+        Debug.Log($"Terrain Bounds {bounds} min,max {bounds.min},{bounds.max}");
         // reduce the invisible walls
-        Vector3 invisibleWall = new Vector3(2.0f, 0, 2.0f);
         bounds.SetMinMax(bounds.min + invisibleWall, bounds.max - invisibleWall);
         Debug.Log($"Plane Bounds without invisible walls {bounds}");
         SpawnRandomObjects();
