@@ -758,6 +758,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 2573809953528693884, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2867303658986466940, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -770,6 +774,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 3846712185613296686, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 5040756637177856057, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: plane
       value: 
@@ -778,6 +786,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 5040756637177856057, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 5178368485256425081, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: plane
       value: 
@@ -786,6 +798,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 5178368485256425081, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5238352271417487164, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: plane
       value: 
@@ -794,6 +810,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 5238352271417487164, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6354215474462981809, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: plane
       value: 
@@ -802,6 +822,10 @@ PrefabInstance:
       propertyPath: terrain
       value: 
       objectReference: {fileID: 1229823750}
+    - target: {fileID: 6354215474462981809, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
+      propertyPath: numberOfStartObjects
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8587265778028523569, guid: 10ca855558962447c9c2358fcbb2151c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 789.7151
@@ -874,6 +898,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6122955737909013586, guid: 1e3dbdc5e66824af2b942da22a536eff, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.2000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122955737909013586, guid: 1e3dbdc5e66824af2b942da22a536eff, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 6122955737909013586, guid: 1e3dbdc5e66824af2b942da22a536eff, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 7380533597669704535, guid: 1e3dbdc5e66824af2b942da22a536eff, type: 3}
       propertyPath: m_Name
       value: PlayerAndCamera
