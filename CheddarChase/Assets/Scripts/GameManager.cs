@@ -5,6 +5,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TMP_Text scoreText;
+    public TMP_Text highscoreText;
     public TMP_Text timerText;
     public float timeRemaining = 60f; // Starting time in seconds
     private bool isGameOver = false;
